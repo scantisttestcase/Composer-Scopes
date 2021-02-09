@@ -11,6 +11,6 @@ jobs:
       - run: apt install curl php-cli php-mbstring git unzip php-xml -y
       - run: curl -sS https://getcomposer.org/installer -o composer-setup.php
       - run: php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-      - run: apt-get install php7.0-curl
+      - run: apt-get install php-curl
       - run: composer install -n --prefer-dist
       - run: composer show --tree
